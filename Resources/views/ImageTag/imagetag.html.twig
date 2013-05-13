@@ -1,0 +1,18 @@
+<div id="{{ scope }}" class="imagetag_wrapper">
+
+    <input type='hidden' class="ajaxRoute" value="{{ (customControllerRoute) ? customControllerRoute : path('PalapImageTagBundle_image_tag', {'imagepath':imagePath|url_encode}) }}">
+
+    <div class='imagetag'>
+
+        <div class='image_panel'>
+            <img src="{{ imagePath }}" class='imageMap' alt="{{ alt }}" />
+            <div class="tagz live"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            ajaxRequest(true, '#{{ scope }}');
+        });
+    </script>
+</div>

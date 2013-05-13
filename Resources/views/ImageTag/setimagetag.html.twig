@@ -1,0 +1,55 @@
+<div id="{{ scope }}" class="imagetag_wrapper">
+
+    <input type='hidden' class="ajaxRoute" value="{{ (customControllerRoute) ? customControllerRoute : path('PalapImageTagBundle_image_tag', {'imagepath':imagePath|url_encode}) }}">
+
+    <div class='imagetag'>
+
+        <div class='image_panel' style="float: left;">
+            <img src="{{ imagePath }}" class='imageMap' alt="{{ alt }}" />
+            <div class='mapper'><img class='save_tag' src='{{ asset('bundles/palapimagetag/images/save.png') }}' onclick='openDialog("#{{ scope }}")' /></div>
+
+            <div class="tagz">
+
+            </div>
+            <div class='form_panel'>
+                <div class='field'><input type='text' class='title' /></div>
+
+                <div class='field'>
+                    <input type='button' value='Add Tag' onclick='addTag("#{{ scope }}")' />
+                    <input type='button' value='Cancel' onclick='cancel("#{{ scope }}")' />
+                </div>
+
+            </div>
+        </div>
+        <div class="options">
+            <div class="option">
+                <input type="button" value="Show Tags" onclick="showTags('#{{ scope }}')" />
+            </div>
+            <div class="option">
+                <input type="button" value="Hide Tags" onclick="hideTags('#{{ scope }}')" />
+            </div>
+            <div class="option">
+                <div class="colors">
+                    <span class="mappercolor black"></span>
+                    <span class="mappercolor gray"></span>
+                    <span class="mappercolor white"></span>
+                    <span class="mappercolor red"></span>
+                    <span class="mappercolor orange"></span>
+                    <span class="mappercolor yellow"></span>
+                    <span class="mappercolor blue"></span>
+                    <span class="mappercolor green"></span>
+                    <span class="mappercolor purple"></span>
+                    <span class="mappercolor pink"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            ajaxRequest(true, '#{{ scope }}');
+        });
+    </script>
+
+    <div style="clear: both;"></div>
+</div>

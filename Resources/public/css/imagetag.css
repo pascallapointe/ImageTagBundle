@@ -1,0 +1,165 @@
+.imagetag_wrapper {
+    display: inline-block;
+}
+.imagetag .mapper{
+    border:5px solid #FFFFFF;
+    width:40px;
+    height:40px;
+    min-width:40px;
+    min-height:40px;
+    z-index:1000;
+    position:absolute;
+    top:0;
+    display:none;
+}
+
+.imagetag .mapper .save_tag {
+    position: relative;
+    top: 0;
+    left: -40px;
+}
+
+.imagetag .tagz div{
+    display:block;
+    position:absolute;
+}
+
+.imagetag .form_panel{
+    float: left;
+    background:#eee;
+    border:5px solid #FFF;
+    outline:1px solid #eee;
+    left: 100px;
+    padding: 5px;
+    position: absolute;
+    top: 40px;
+    width: 146px;
+    display:none;
+    z-index:2000;
+}
+
+.imagetag .form_panel input,textarea{
+    background:#FFF;
+    border:1px solid #CFCFCF;
+    color:#000;
+}
+
+.imagetag .form_panel input[type='button'] {
+    padding: 3px 10px;
+}
+
+.imagetag .image_panel{
+    position:relative;
+}
+.imagetag .image_panel img{
+    left:0;top:-102px;
+    overflow: hidden;
+
+}
+
+.imagetag .form_panel .label{
+    float:left;
+    width:80px;
+    padding:5px;
+}
+
+.imagetag .form_panel .field{
+    float:left;
+    width:200px;
+    padding:5px;
+}
+
+.imagetag .form_panel .row{
+    clear:both;
+}
+
+.imagetag .tagged_box .edit_tag {
+    display: block;
+    border: none;
+    position: relative;
+    top: -37px;
+    left: -40px;
+}
+
+.tagged {
+  border: 5px none #FFFFFF;
+}
+
+.imagetag .tagged_title{
+    background: none repeat scroll 0 0 #4D4D4D;
+    border: 2px solid;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px;
+    margin-top:5px;
+    white-space:nowrap;
+}
+
+.imagetag .options {
+    float: right;
+}
+
+.imagetag .options input[type='button']{
+    display: inline-block;
+    background-color: #FFFFFF;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.imagetag .options .colors {
+    width: 65px;
+    float: left;
+    padding: 5px 10px;
+}
+
+.imagetag .options .colors span {
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    padding: 10px;
+    border: 2px solid #aaaaaa;
+}
+
+.imagetag .options .colors .black {
+    background-color: #000000;
+}
+
+.imagetag .options .colors .gray {
+    background-color: #777777;
+}
+
+.imagetag .options .colors .white {
+    background-color: #ffffff;
+}
+
+.imagetag .options .colors .red {
+    background-color: #ff0000;
+}
+
+.imagetag .options .colors .blue {
+    background-color: #0000ff;
+}
+
+.imagetag .options .colors .yellow {
+    background-color: yellow;
+}
+
+.imagetag .options .colors .green {
+    background-color: #008000;
+}
+
+.imagetag .options .colors .purple {
+    background-color: #9370DB;
+}
+
+.imagetag .options .colors .orange {
+    background-color: #FF8C00;
+}
+
+.imagetag .options .colors .pink {
+    background-color: #FF69B4;
+}

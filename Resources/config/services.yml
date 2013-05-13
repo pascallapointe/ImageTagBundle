@@ -1,0 +1,8 @@
+parameters:
+    PalapImageTagExtension: Palap\ImageTagBundle\Twig\ImageTagExtension
+
+services:
+    palap.twig.image_tag_extension:
+        class: %PalapImageTagExtension%
+        tags:
+            - { name: twig.extension }

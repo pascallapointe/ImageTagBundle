@@ -1,0 +1,4 @@
+PalapImageTagBundle_image_tag:
+    pattern:  /ajax
+    defaults: { _controller: "PalapImageTagBundle:ImageTag:imageTag" }
+
