@@ -120,8 +120,8 @@ var addTag = function(context){
     var pos_width = $('.mapper', context).width();
     var pos_height = $('.mapper', context).height();
 
-    var bordercolor = $('.mapper', context).css('borderColor');
-
+    // border-top-color instead of borderColor for mozilla compatibility
+    var bordercolor = $('.mapper', context).css('border-top-color');
 
     $('.tagz', context).append('<div class="tagged" style="border: 5px none '+bordercolor+';width:'+pos_width+'px;height:'+
         pos_height+'px;left:'+pos_x+'px;top:'+pos_y+'px;" ><div class="tagged_box" style="width:'+pos_width+'px;height:'+
