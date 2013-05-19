@@ -67,7 +67,13 @@ It is possible to use a controller with twig custom functions to modify the way 
 **Explanation :**
 * MyCustomControllerRoute is the route used by the Ajax request
 * You **must definitely** specify a parameter in your way, even if it is a decoy to initiate the "*query string*"
-* The query string added to your *Route* by the script **js** is as follows : `'&init=' + init + '&width=' + imageWidth + '&height=' + imageHeight + '&htmlcontent=' + encodeURIComponent($('.tagz', context).html())`
+* The query string added to your *Route* by the script **js** is as follows : 
+    
+    ```
+    '&init=' + init + '&width=' + imageWidth + '&height=' + imageHeight
+    + '&htmlcontent=' + encodeURIComponent($('.tagz', context).html())
+    ```
+    
 * **init** is equal to true on the first query, used for initialization purpose
 * **htmlcontent** contains tags to save
 
