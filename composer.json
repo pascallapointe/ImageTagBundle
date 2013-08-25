@@ -1,0 +1,22 @@
+{
+    "name": "palap/imagetag-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony2 image tag. Add colored tags with label to your image on symfony2.",
+    "keywords": ["image", "tag", "image tag", "image comment"],
+    "homepage": "https://github.com/pascallapointe/ImageTagBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pascal Lapointe",
+            "email": "pascal.lapointe@hotmail.com"
+        }
+            
+    ],
+    "require": {
+        "symfony/symfony": "2.3.*"
+    },
+    "autoload": {
+        "psr-0": { "Palap\\ImageTagBundle": "" }
+    },
+    "target-dir": "Palap/ImageTagBundle"
+}
