@@ -34,7 +34,7 @@ class ImageTagController extends Controller
 
             $fileName = preg_replace('#([^/]*.)+$#i','$1',$imagePath);
 
-            $em = $this->getDoctrine()->getEntityManager();
+            $em = $this->getDoctrine()->getManager();
 
             $entity = $em->getRepository('PalapImageTagBundle:ImageTag')->findOneBy(array('filename' => $fileName));
 

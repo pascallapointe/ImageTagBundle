@@ -1,4 +1,4 @@
-$(".tagged").live("mouseover",function(){
+$(document).on("mouseover", ".tagged", function(){
     if($(this).find(".openDialog").length == 0){
         $(this).css("border-style","solid");
         $(this).find(".tagged_box").css("display","block");
@@ -6,7 +6,7 @@ $(".tagged").live("mouseover",function(){
     }
 });
 
-$(".tagged").live("mouseout",function(){
+$(document).on("mouseout", ".tagged", function(){
     if($(this).find(".openDialog").length == 0){
         $(this).find(".tagged_box").css("display","none");
         $(this).css("border-style","none");

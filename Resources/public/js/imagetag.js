@@ -70,7 +70,7 @@ $(document).ready(function() {
 
 });
 
-$(".tagged").live("mouseover",function(){
+$(document).on("mouseover", ".tagged", function(){
     if($(this).find(".openDialog").length == 0){
         $(this).css("border-style","solid");
         $(this).find(".tagged_box").css("display","block");
@@ -78,7 +78,7 @@ $(".tagged").live("mouseover",function(){
     }
 });
 
-$(".tagged").live("mouseout",function(){
+$(document).on("mouseout", ".tagged", function(){
     if($(this).find(".openDialog").length == 0){
         $(this).find(".tagged_box").css("display","none");
         $(this).css("border-style","none");
@@ -86,16 +86,16 @@ $(".tagged").live("mouseout",function(){
     }
 });
 
-$(".edit_tag").live("click", function(e){
+$(document).on("click", ".edit_tag", function(e){
    editTag(this);
 });
 
-$(".delete_tag").live("click", function(e){
+$(document).on("click", ".delete_tag", function(e){
     e.stopPropagation();
     deleteTag(this);
 });
 
-$(".tagged").live("click",function(){
+$(document).on("click", ".tagged", function(){
     if (!$(this).parent().hasClass('live')) {
         var context = '#' + $(this).parent().parent().parent().parent().attr('id');
 
@@ -141,14 +141,6 @@ var addTag = function(context){
     $(".form_panel", context).hide();
 
     ajaxRequest(false, context);
-};
-
-var cancel = function(context){
-    $(".form_panel", context).hide();
-}
-
-var openDialog = function(context){
-    $(".form_panel", context).fadeIn("slow");
 };
 
 var showTags = function(context){

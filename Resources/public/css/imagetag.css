@@ -24,53 +24,26 @@
     position:absolute;
 }
 
-.imagetag .form_panel{
-    float: left;
-    background:#eee;
-    border:5px solid #FFF;
-    outline:1px solid #eee;
-    left: 100px;
-    padding: 5px;
-    position: absolute;
-    top: 40px;
-    width: 146px;
-    display:none;
-    z-index:2000;
-}
-
-.imagetag .form_panel input,textarea{
-    background:#FFF;
-    border:1px solid #CFCFCF;
-    color:#000;
-}
-
-.imagetag .form_panel input[type='button'] {
-    padding: 3px 10px;
+.imagetag .save_tag_form {
+    display: none;
 }
 
 .imagetag .image_panel{
     position:relative;
 }
-.imagetag .image_panel img{
+.imagetag .image_panel img {
     left:0;top:-102px;
     overflow: hidden;
 
 }
 
-.imagetag .form_panel .label{
-    float:left;
-    width:80px;
-    padding:5px;
+.ui-dialog.ui-front {
+    z-index: 1000;
 }
 
-.imagetag .form_panel .field{
-    float:left;
-    width:200px;
-    padding:5px;
-}
-
-.imagetag .form_panel .row{
-    clear:both;
+.save_tag_form input[type="text"] {
+    width: 255px;
+    border: 2px solid #888888;
 }
 
 .imagetag .tagged_box .edit_tag {
@@ -85,7 +58,7 @@
   border: 5px none #FFFFFF;
 }
 
-.imagetag .tagged_title{
+.imagetag .tagged_title {
     background: none repeat scroll 0 0 #4D4D4D;
     border: 2px solid;
     color: #FFFFFF;
@@ -100,7 +73,7 @@
     float: right;
 }
 
-.imagetag .options input[type='button']{
+.imagetag .options input[type='button'] {
     display: inline-block;
     background-color: #FFFFFF;
     border: 1px solid #39b54a;
